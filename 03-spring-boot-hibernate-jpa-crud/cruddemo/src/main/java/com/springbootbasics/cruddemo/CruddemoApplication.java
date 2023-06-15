@@ -2,10 +2,12 @@ package com.springbootbasics.cruddemo;
 
 import com.springbootbasics.cruddemo.dao.ApiResponseEntity;
 import com.springbootbasics.cruddemo.dao.StudentDAO;
+import com.springbootbasics.cruddemo.entity.Student;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.dao.DataAccessException;
 
 @SpringBootApplication
 public class CruddemoApplication {
@@ -19,7 +21,7 @@ public class CruddemoApplication {
 	@Bean
 	public CommandLineRunner commandLineRunner(StudentDAO studentDAO){
 		return (runner)->{
-			getByName(studentDAO);
+			updateStudentById(studentDAO);
 
 		};
 
@@ -60,5 +62,30 @@ public class CruddemoApplication {
 		System.out.println("Retrieving  students by name...:");
 		ApiResponseEntity cmdResponse = studentDAO.findStudentByLastName("Doe");
 		System.out.println(cmdResponse);
+	}
+
+	private void updateStudentById(StudentDAO studentDAO){
+		//Retrieve student using Id;
+		System.out.println("Retrieving student using id...:");
+		Student response = studentDAO.findById(4);
+		System.out.println("Retrieved Student : \n" +response);
+
+		//Update firstname of retrieved student
+		System.out.println("Updating firstname of retrieved student...:");
+		response.setFirstname("Rhodes");
+
+		//Save and update in database
+//		studentDAO.update(response);
+//		Student responseUpdated = studentDAO.findById(4);
+//		System.out.println("Updated Student : \n" +responseUpdated);
+
+		try {
+			studentDAO.update(response);
+			System.out.println("Success");
+		} catch (RuntimeException ex) {
+			System.out.println("Failure");
+			ex.printStackTrace();
+		}
+
 	}
 }

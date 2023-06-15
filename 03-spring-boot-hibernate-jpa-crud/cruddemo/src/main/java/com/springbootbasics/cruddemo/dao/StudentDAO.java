@@ -12,4 +12,6 @@ public interface StudentDAO {
     ApiResponseEntity findAll();
 
     ApiResponseEntity findStudentByLastName(String theLastName);
+
+    void update(Student student);
 }
