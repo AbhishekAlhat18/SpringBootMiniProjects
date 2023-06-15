@@ -40,4 +40,14 @@ public class ApiResponseEntity {
     public void setResponseBody(Object responseBody) {
         this.responseBody = responseBody;
     }
+
+    @Override
+    public String toString() {
+        return "ApiResponseEntity{" +
+                "message='" + message + '\'' +
+                ", status=" + status +
+                ", statusCode=" + statusCode +
+                ", responseBody=" + responseBody +
+                '}';
+    }
 }

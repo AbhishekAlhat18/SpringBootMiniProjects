@@ -1,7 +1,7 @@
 package com.springbootbasics.cruddemo;
 
+import com.springbootbasics.cruddemo.dao.ApiResponseEntity;
 import com.springbootbasics.cruddemo.dao.StudentDAO;
-import com.springbootbasics.cruddemo.entity.Student;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -58,6 +58,7 @@ public class CruddemoApplication {
 
 	private void getByName(StudentDAO studentDAO){
 		System.out.println("Retrieving  students by name...:");
-		System.out.println(studentDAO.findByLastName("Doe"));
+		ApiResponseEntity cmdResponse = studentDAO.findStudentByLastName("Doe");
+		System.out.println(cmdResponse);
 	}
 }

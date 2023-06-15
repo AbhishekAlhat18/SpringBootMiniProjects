@@ -54,11 +54,17 @@ public class StudentDAOImp implements StudentDAO {
     }
 
     @Override
-    public List<Student> findByLastName(String theLastName) {
+    public ApiResponseEntity findStudentByLastName(String theLastName) {
+        ApiResponseEntity response = new ApiResponseEntity();
         TypedQuery<Student> theQuery = entityManager.createQuery(
                 "FROM Student WHERE lastname = :Data", Student.class);
         theQuery.setParameter("Data", theLastName);
-        return theQuery.getResultList();
+        List<Student> student =  theQuery.getResultList();
+        response.setMessage("Request Successful");
+        response.setStatus(HttpStatus.OK);
+        response.setStatusCode(HttpStatus.OK.value());
+        response.setResponseBody(student);
+        return response;
 
     }
 

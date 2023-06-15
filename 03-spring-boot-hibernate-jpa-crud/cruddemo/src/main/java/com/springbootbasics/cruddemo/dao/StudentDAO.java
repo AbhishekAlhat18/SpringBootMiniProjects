@@ -11,5 +11,5 @@ public interface StudentDAO {
 
     ApiResponseEntity findAll();
 
-     List<Student>findByLastName(String theLastName);
+    ApiResponseEntity findStudentByLastName(String theLastName);
 }
