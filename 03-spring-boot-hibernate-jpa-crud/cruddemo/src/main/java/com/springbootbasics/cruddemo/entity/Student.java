@@ -6,28 +6,29 @@ import jakarta.persistence.*;
 @Table(name = "student")
 public class Student {
 
-@Id
-@GeneratedValue(strategy = GenerationType.IDENTITY)
-private int Id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int Id;
 
-@Column(name = "first_name")
-private String firstname;
+    @Column(name = "first_name")
+    private String firstName;
 
-@Column(name="last_name")
-private String lastname;
+    @Column(name = "last_name")
+    private String lastName;
 
-@Column(name="email")
-private String email;
+    @Column(name = "email")
+    private String email;
 
-public Student(){
+    public Student() {
 
-}
+    }
 
-    public Student( String firstname, String lastname, String email) {
-
-        this.firstname = firstname;
-        this.lastname = lastname;
+    public Student( String firstName, String lastName, String email) {
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.email = email;
+
+
     }
 
     public int getId() {
@@ -38,27 +39,33 @@ public Student(){
         Id = id;
     }
 
-    public String getFirstname() {
-        return firstname;
+    public String getFirstName() {
+        System.out.println("getter for firstName is called...");
+        return firstName;
     }
 
-    public void setFirstname(String firstname) {
-        this.firstname = firstname;
+    public void setFirstName(String firstName) {
+        System.out.println("setter for firstName is called: "+firstName);
+        this.firstName = firstName;
     }
 
-    public String getLastname() {
-        return lastname;
+    public String getLastName() {
+        System.out.println("getter for lastName is called...");
+        return lastName;
     }
 
-    public void setLastname(String lastname) {
-        this.lastname = lastname;
+    public void setLastName(String lastName) {
+        System.out.println("setter for lastName is called: "+lastName);
+        this.lastName = lastName;
     }
 
     public String getEmail() {
+        System.out.println("getter for email is called...");
         return email;
     }
 
     public void setEmail(String email) {
+        System.out.println("setter for email is called: "+email);
         this.email = email;
     }
 
@@ -66,8 +73,8 @@ public Student(){
     public String toString() {
         return "Student{" +
                 "Id=" + Id +
-                ", firstname='" + firstname + '\'' +
-                ", lastname='" + lastname + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
                 ", email='" + email + '\'' +
                 '}';
     }

@@ -5,7 +5,7 @@ import com.springbootbasics.cruddemo.entity.Student;
 import java.util.List;
 
 public interface StudentDAO {
-    void save(Student student);
+    ApiResponseEntity save(Student student);
 
     Student findById(Integer Id);
 
@@ -14,4 +14,8 @@ public interface StudentDAO {
     ApiResponseEntity findStudentByLastName(String theLastName);
 
     void update(Student student);
+
+    ApiResponseEntity delete(int Id);
+
+    ApiResponseEntity deleteAllStudents();
 }

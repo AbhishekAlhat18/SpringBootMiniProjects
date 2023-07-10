@@ -1,0 +1,12 @@
+com
+ └── yourcompany
+     └── projectname
+         ├── controller
+         │   └── ... (your controller classes)
+         ├── service
+         │   └── ... (your service classes)
+         ├── repository
+         │   └── ... (your repository classes)
+         ├── exception
+         │   └── GlobalExceptionHandler.java
+         └── ProjectNameApplication.java

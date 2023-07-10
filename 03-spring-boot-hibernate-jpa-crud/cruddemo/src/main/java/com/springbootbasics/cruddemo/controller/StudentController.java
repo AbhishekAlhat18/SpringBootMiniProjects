@@ -5,13 +5,13 @@ import com.springbootbasics.cruddemo.dao.StudentDAOImp;
 import com.springbootbasics.cruddemo.entity.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
+@RequestMapping("/api")
 public class StudentController {
 
     private StudentDAOImp studentDAOImp;
@@ -28,10 +28,21 @@ public class StudentController {
         return ResponseEntity.status(response.getStatus()).body(response);
     }
 
+    @PostMapping(path = "/addStudent")
+    public ApiResponseEntity saveStudent(@RequestBody Student student){
+        ApiResponseEntity response = studentDAOImp.save(student);
+        return response;
+    }
+
     @GetMapping(path = "/getStudentByLastName/{studentName}")
     public ResponseEntity<ApiResponseEntity>getStudentByLastName(@PathVariable("studentName") String studentName){
         ApiResponseEntity response = studentDAOImp.findStudentByLastName(studentName);
         return ResponseEntity.status(response.getStatus()).body(response);
 
+    }
+    @GetMapping(path = "/deleteStudentById")
+    public ResponseEntity<ApiResponseEntity> deleteStudentById(@RequestParam(value = "Id") int Id ){
+        ApiResponseEntity response = studentDAOImp.delete(Id);
+        return  ResponseEntity.status(response.getStatus()).body(response);
     }
 }
