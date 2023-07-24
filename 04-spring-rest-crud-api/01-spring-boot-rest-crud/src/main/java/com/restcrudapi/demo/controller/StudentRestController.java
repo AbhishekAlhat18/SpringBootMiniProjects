@@ -35,10 +35,10 @@ public class StudentRestController {
             @RequestParam(required = false) String optionalVariable) {
         if (optionalVariable != null) {
             // Path variable is present
-            return ResponseEntity.ok("Path variable value: " + optionalVariable);
+            return ResponseEntity.ok("RequestParam variable value: " + optionalVariable);
         } else {
             // Path variable is not present
-            return ResponseEntity.ok("Path variable is not provided");
+            return ResponseEntity.ok("RequestParam variable is not provided");
         }
 
     }
