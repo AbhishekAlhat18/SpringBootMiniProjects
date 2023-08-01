@@ -11,6 +11,7 @@ import org.springframework.dao.DataAccessException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 
@@ -22,10 +23,10 @@ public class CruddemoApplication {
 	public static void main(String[] args) throws Exception {
 		SpringApplication.run(CruddemoApplication.class, args);
 
-		Date newUtilDate = new Date(new java.util.Date().getTime());
+		java.sql.Date  newUtilDate = new java.sql.Date (new java.util.Date().getTime());
 		int year = 2023;
-		int month = 5; // January is month 0, so June is month 5
-		int day = 29;
+		int month = 6; // January is month 0, so June is month 5
+		int day = 25;
 
 		// Create a Calendar instance
 		java.util.Calendar calendar = java.util.Calendar.getInstance();
@@ -36,15 +37,18 @@ public class CruddemoApplication {
 		System.out.println("Util Date: " + specificDate);
 
 		// Convert newUtilDate to java.sql.Date
-		Date specificSqlDate = new Date(specificDate.getTime());
-		Date newSqlDate = new Date(newUtilDate.getTime());
+		java.sql.Date specificSqlDate = new java.sql.Date(specificDate.getTime());
+		java.sql.Date newSqlDate = new java.sql.Date (newUtilDate.getTime());
 		System.out.println("specificSqlDate" +specificSqlDate);
 		System.out.println("newSqlDate" +newSqlDate);
 
+		LocalDate dbdate = specificSqlDate.toLocalDate();
+		LocalDate newDate = newSqlDate.toLocalDate();
+
 		// Compare the dates
-		if (specificSqlDate.before(newSqlDate)) {
+		if (dbdate.isBefore(newDate)) {
 			System.out.println(newSqlDate + " is before " + specificSqlDate);
-		} else if (specificSqlDate.after(newSqlDate)) {
+		} else if (dbdate.isAfter(newDate)) {
 			System.out.println(newSqlDate + " is after " + specificSqlDate);
 		} else {
 			System.out.println(specificSqlDate + " is equal to " + specificSqlDate);

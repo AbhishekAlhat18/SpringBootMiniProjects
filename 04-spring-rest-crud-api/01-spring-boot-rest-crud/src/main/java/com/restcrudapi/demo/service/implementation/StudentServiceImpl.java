@@ -20,7 +20,7 @@ public class StudentServiceImpl implements StudentService {
 //    }
 
     //Instead of using above constructor and calling method createList()
-    //inside constructor we can also use PostConstruct to
+    //We can also use PostConstruct to
     //run this once post this class is constructed.
 
     @PostConstruct
