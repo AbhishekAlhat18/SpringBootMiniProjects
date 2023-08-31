@@ -19,9 +19,9 @@ public class StudentServiceImpl implements StudentService {
 //        createStudentList();
 //    }
 
-    //Instead of using above constructor and calling method createList()
-    //We can also use PostConstruct to
-    //run this once post this class is constructed.
+    /*Instead of using above constructor and calling method createList()
+      we can also use PostConstruct to
+      run this once post this class is constructed.*/
 
     @PostConstruct
     private void loadData(){
