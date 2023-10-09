@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="70bce3e0-54c8-4048-a341-9e09c59c639e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../03-spring-boot-hibernate-jpa-crud/cruddemo/src/main/java/com/springbootbasics/cruddemo/CruddemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../03-spring-boot-hibernate-jpa-crud/cruddemo/src/main/java/com/springbootbasics/cruddemo/CruddemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-spring-boot-hibernate-jpa-crud/cruddemo/src/main/java/com/springbootbasics/cruddemo/dao/StudentDAOImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../03-spring-boot-hibernate-jpa-crud/cruddemo/src/main/java/com/springbootbasics/cruddemo/dao/StudentDAOImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04-spring-rest-crud-api/01-spring-boot-rest-crud/src/main/java/com/restcrudapi/demo/controller/StudentRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../04-spring-rest-crud-api/01-spring-boot-rest-crud/src/main/java/com/restcrudapi/demo/controller/StudentRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04-spring-rest-crud-api/01-spring-boot-rest-crud/src/main/java/com/restcrudapi/demo/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../04-spring-rest-crud-api/01-spring-boot-rest-crud/src/main/java/com/restcrudapi/demo/service/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04-spring-rest-crud-api/01-spring-boot-rest-crud/src/main/java/com/restcrudapi/demo/service/implementation/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../04-spring-rest-crud-api/01-spring-boot-rest-crud/src/main/java/com/restcrudapi/demo/service/implementation/StudentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/06_02_spring-boot-spring-mvc-validation.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Validationdemo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Validationdemo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Validationdemo/src/main/java/com/abhishek/springdemo/mvc/Validationdemo/ValidationdemoApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Validationdemo/src/test/java/com/abhishek/springdemo/mvc/Validationdemo/ValidationdemoApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../06_02_spring-boot-spring-mvc-validation/.idea/workspace.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2UxsE2U6c9WHYeZiTe897wly1RG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "E:/Java Learnings's(Linked In)/Java 8 - Streams And Lamdas/Streams And Lamdas",
+    "settings.editor.selected.configurable": "advanced.settings"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="ValidationDemoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.abhishek.mvc.ValidationDemo.ValidationDemoApplication" />
+      <module name="ValidationDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.abhishek.mvc.ValidationDemo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ValidationDemoApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="70bce3e0-54c8-4048-a341-9e09c59c639e" name="Changes" comment="" />
+      <created>1693892455503</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1693892455503</updated>
+    </task>
+    <servers />
+  </component>
+</project>

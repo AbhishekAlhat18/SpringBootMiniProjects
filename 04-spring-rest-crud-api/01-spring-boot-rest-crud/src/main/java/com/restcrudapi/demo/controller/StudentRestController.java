@@ -43,6 +43,13 @@ public class StudentRestController {
 
     }
 
+    @PostMapping(path = "/add")
+    @ResponseBody
+    public Student addStudent(@RequestBody Student student){
+        return studentService.addStudent(student);
+
+    }
+
 
 
 

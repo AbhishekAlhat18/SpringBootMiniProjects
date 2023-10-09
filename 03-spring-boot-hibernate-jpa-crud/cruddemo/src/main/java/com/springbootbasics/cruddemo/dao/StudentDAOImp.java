@@ -77,7 +77,7 @@ public class StudentDAOImp implements StudentDAO {
 
     @Override
     @Transactional
-    public void update(Student student) {
+    public void update(Student student) throws RuntimeException {
         entityManager.merge(student);
 
     }

@@ -8,4 +8,6 @@ public interface StudentService {
 
     List<Student> getAllStudents();
     Student getById(int Id);
+
+    Student addStudent(Student student);
 }

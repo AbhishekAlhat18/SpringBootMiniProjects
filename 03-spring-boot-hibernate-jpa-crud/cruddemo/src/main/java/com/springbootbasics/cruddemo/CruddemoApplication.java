@@ -61,7 +61,7 @@ public class CruddemoApplication {
 	public CommandLineRunner commandLineRunner(StudentDAO studentDAO){
 		return (runner)->{
 			createMultipleStudents(studentDAO);
-			updateStudentById(studentDAO);
+			//updateStudentById(studentDAO);
 
 		};
 
@@ -121,14 +121,14 @@ public class CruddemoApplication {
 		System.out.println(cmdResponse);
 	}
 
-	private void updateStudentById(StudentDAO studentDAO){
+	private void updateStudentById(StudentDAO studentDAO) throws RuntimeException {
 		//Retrieve student using Id;
-		System.out.println("Retrieving student using id...:");
+//		System.out.println("Retrieving student using id...:");
 		int studentId = 1;
 		Student response = studentDAO.findById(studentId);
 		System.out.println("Retrieved Student : \n" +response);
-
-		//Update firstname of retrieved student
+//
+//		//Update firstname of retrieved student
 		System.out.println("Updating firstname of retrieved student...:");
 		response.setFirstName("Silly");
 

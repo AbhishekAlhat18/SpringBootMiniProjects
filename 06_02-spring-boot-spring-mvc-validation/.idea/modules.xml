@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/06_02_spring-boot-spring-mvc-validation.iml" filepath="$PROJECT_DIR$/.idea/06_02_spring-boot-spring-mvc-validation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/06_02-spring-boot-spring-mvc-validation.iml" filepath="$PROJECT_DIR$/.idea/06_02-spring-boot-spring-mvc-validation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ValidationDemo/ValidationDemo.iml" filepath="$PROJECT_DIR$/ValidationDemo/ValidationDemo.iml" />
     </modules>
   </component>
 </project>
