@@ -5,18 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70bce3e0-54c8-4048-a341-9e09c59c639e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../03-spring-boot-hibernate-jpa-crud/cruddemo/src/main/java/com/springbootbasics/cruddemo/CruddemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../03-spring-boot-hibernate-jpa-crud/cruddemo/src/main/java/com/springbootbasics/cruddemo/CruddemoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-spring-boot-hibernate-jpa-crud/cruddemo/src/main/java/com/springbootbasics/cruddemo/dao/StudentDAOImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../03-spring-boot-hibernate-jpa-crud/cruddemo/src/main/java/com/springbootbasics/cruddemo/dao/StudentDAOImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-spring-rest-crud-api/01-spring-boot-rest-crud/src/main/java/com/restcrudapi/demo/controller/StudentRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../04-spring-rest-crud-api/01-spring-boot-rest-crud/src/main/java/com/restcrudapi/demo/controller/StudentRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-spring-rest-crud-api/01-spring-boot-rest-crud/src/main/java/com/restcrudapi/demo/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../04-spring-rest-crud-api/01-spring-boot-rest-crud/src/main/java/com/restcrudapi/demo/service/StudentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-spring-rest-crud-api/01-spring-boot-rest-crud/src/main/java/com/restcrudapi/demo/service/implementation/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../04-spring-rest-crud-api/01-spring-boot-rest-crud/src/main/java/com/restcrudapi/demo/service/implementation/StudentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/06_02_spring-boot-spring-mvc-validation.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Validationdemo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Validationdemo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Validationdemo/src/main/java/com/abhishek/springdemo/mvc/Validationdemo/ValidationdemoApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Validationdemo/src/test/java/com/abhishek/springdemo/mvc/Validationdemo/ValidationdemoApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06_02_spring-boot-spring-mvc-validation/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../06-spring-boot-spring-mvc/thymeleafdemo/src/main/java/com/abhishek/thymeleafdemo/controller/DemoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../06-spring-boot-spring-mvc/thymeleafdemo/src/main/java/com/abhishek/thymeleafdemo/controller/DemoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +47,7 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "E:/Java Learnings's(Linked In)/Java 8 - Streams And Lamdas/Streams And Lamdas",
+    "last_opened_file_path": "E:/Chad Derby Projects/06-spring-boot-spring-mvc",
     "settings.editor.selected.configurable": "advanced.settings"
   }
 }]]></component>
