@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th = "https//:www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Form</title>
+</head>
+<body>
+<form th:action = "@{/api/processEmployeeForm}" method = "POST">
+    Employee Name: <input type="text" name="employeeName">
+    <input type="submit"/>
+</form>
+</body>
+</html>

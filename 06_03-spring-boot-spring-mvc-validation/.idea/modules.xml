@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/06_03-spring-boot-spring-mvc-validation.iml" filepath="$PROJECT_DIR$/.idea/06_03-spring-boot-spring-mvc-validation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mvcvalidation/mvcvalidation.iml" filepath="$PROJECT_DIR$/mvcvalidation/mvcvalidation.iml" />
+    </modules>
+  </component>
+</project>

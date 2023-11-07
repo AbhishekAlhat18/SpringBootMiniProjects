@@ -14,15 +14,15 @@ public class DemoController {
         themodel.addAttribute("theDate",new java.util.Date());
 
         return "thymeleafDemo";
-//        Spring will automatically add .html to return string
+//        Spring will automatically add .html to return String
 
     }
 
     @GetMapping(path = "/hello")
     public String sayHello(Model theModel){
         String firstName = "John";
-//        theModel.addAttribute can be used to set data which can be used in HTML view in thymeleaf templates
-          theModel.addAttribute("theFirstName",firstName);
+//      theModel.addAttribute can be used to set data which can be used in HTML view in thymeleaf templates
+        theModel.addAttribute("theFirstName",firstName);
 
         return "john";
     }
