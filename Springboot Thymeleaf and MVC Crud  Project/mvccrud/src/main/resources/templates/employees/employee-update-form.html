@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Update Form</title>
+</head>
+<body>
+<h3>Employee Directory</h3>
+<hr>
+Edit Employee
+<br><br>
+<form action="#" th:action="@{/api/processEmployeeForm}" th:object="${employee}" th:method="PUT">
+    <input type="hidden" th:field="${employee.id}">
+
+    <input type="text" th:field="${employee.firstName}" placeholder="First Name">
+    <br><br>
+    <input type="text" th:field="${employee.lastName}" placeholder="First Name">
+    <br><br>
+    <input type="text" th:field="${employee.email}" placeholder="First Name">
+    <br><br>
+    <button type="submit">Submit</button>
+</form>
+<hr>
+<a th:href="@{/api/employees}">Back to employee list</a>
+
+
+</body>
+</html>

@@ -1,16 +1,13 @@
-package com.abhishek.restcrudapi;
+package com.abhishek.springboot.mvccrud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-
-
 @SpringBootApplication
-public class RestcrudapiApplication {
+public class MvccrudApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(RestcrudapiApplication.class, args);
+		SpringApplication.run(MvccrudApplication.class, args);
 	}
-
 
 }

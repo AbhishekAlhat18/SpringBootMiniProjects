@@ -1,16 +1,13 @@
-package com.abhishek.restcrudapi;
+package com.luv2code.springboot.cruddemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-
-
 @SpringBootApplication
-public class RestcrudapiApplication {
+public class CruddemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(RestcrudapiApplication.class, args);
+		SpringApplication.run(CruddemoApplication.class, args);
 	}
-
 
 }

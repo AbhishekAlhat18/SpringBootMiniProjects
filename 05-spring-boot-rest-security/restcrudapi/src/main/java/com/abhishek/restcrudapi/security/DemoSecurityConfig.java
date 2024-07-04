@@ -23,55 +23,8 @@ public class DemoSecurityConfig {
 
 //    A Spring Bean is an object managed by the Spring framework.
 
-/*  //Use when using predefined Spring security schema -users and authorities
-    @Bean
-    public UserDetailsManager userDetailsManager(DataSource dataSource){
-        return  new JdbcUserDetailsManager(dataSource);
-    }
-*/
-    @Bean
 
-    public UserDetailsManager userDetailsManager(DataSource dataSource){
-
-        JdbcUserDetailsManager jdbcUserDetailsManager = new JdbcUserDetailsManager(dataSource);
-
-        //define query to retrieve a user by username
-        //define a query to retrieve roles/authorities by username
-
-        jdbcUserDetailsManager.setUsersByUsernameQuery("SELECT user_id, pw, active FROM members where user_id=?");
-
-        jdbcUserDetailsManager.setAuthoritiesByUsernameQuery("SELECT user_id, role FROM roles where user_id=?");
-
-        return  jdbcUserDetailsManager;
-
-
-
-    }
-    //Define a method of type SecurityFilterChain which accepts parameter of type HttpSecurity
-    //call method authorizeHttpRequests on object of HttpSecurity passed as an parameter
-    @Bean
-    public SecurityFilterChain filterChain(HttpSecurity http)throws Exception{
-        http.authorizeHttpRequests(c->c
-                        .requestMatchers(HttpMethod.GET ,"/api/employess").hasRole("EMPLOYEE")
-                .requestMatchers(HttpMethod.GET ,"/api/employees/**").hasRole("EMPLOYEE")
-                .requestMatchers(HttpMethod.POST ,"/api/employees").hasRole("MANAGER")
-                .requestMatchers(HttpMethod.PUT ,"/api/employees/**").hasRole("MANAGER")
-                .requestMatchers(HttpMethod.DELETE ,"/api/employees/**").hasRole("ADMIN")
-        );
-        //use http basic auth
-        http.httpBasic(Customizer.withDefaults());
-
-        //disable Cross-Site Request Forgery(csrf)
-        //in general not required for stateless rest API that use POST,PUT,DELETE and PATCH
-
-         http.csrf(c->c.disable());
-
-         return http.build();
-
-    }
-}
-
-/*
+    /*
     @Bean
     public InMemoryUserDetailsManager userDetailsManager(){
 
@@ -101,3 +54,52 @@ public class DemoSecurityConfig {
     }
 
     */
+
+    /*  //Use when using predefined Spring security schema -users and authorities
+    @Bean
+    public UserDetailsManager userDetailsManager(DataSource dataSource){
+        return  new JdbcUserDetailsManager(dataSource);
+    }
+*/
+    @Bean
+
+    public UserDetailsManager userDetailsManager(DataSource dataSource){
+
+        JdbcUserDetailsManager jdbcUserDetailsManager = new JdbcUserDetailsManager(dataSource);
+
+        //define query to retrieve a user by username
+        //define a query to retrieve roles/authorities by username
+
+        jdbcUserDetailsManager.setUsersByUsernameQuery("SELECT user_id, pw, active FROM members where user_id=?");
+
+        jdbcUserDetailsManager.setAuthoritiesByUsernameQuery("SELECT user_id, role FROM roles where user_id=?");
+
+        return  jdbcUserDetailsManager;
+
+
+
+    }
+    //Define a method of type SecurityFilterChain which accepts parameter of type HttpSecurity
+    //call method authorizeHttpRequests on object of HttpSecurity passed as an parameter
+    @Bean
+    public SecurityFilterChain filterChain(HttpSecurity http)throws Exception{
+        http.authorizeHttpRequests(c->c
+                        .requestMatchers(HttpMethod.GET ,"/api/employees").hasRole("EMPLOYEE")
+                .requestMatchers(HttpMethod.GET ,"/api/employees/**").hasRole("EMPLOYEE")
+                .requestMatchers(HttpMethod.POST ,"/api/employees").hasRole("MANAGER")
+                .requestMatchers(HttpMethod.PUT ,"/api/employees/**").hasRole("MANAGER")
+                .requestMatchers(HttpMethod.DELETE ,"/api/employees/**").hasRole("ADMIN")
+        );
+        //use http basic auth
+        http.httpBasic(Customizer.withDefaults());
+
+        //disable Cross-Site Request Forgery(csrf)
+        //in general not required for stateless rest API that use POST,PUT,DELETE and PATCH
+
+         http.csrf(c->c.disable());
+
+         return http.build();
+
+    }
+}
+

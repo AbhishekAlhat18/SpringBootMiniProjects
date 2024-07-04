@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ba7f7680-4b45-4a9e-9e48-e42fc72228e0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../05-spring-boot-rest-security/restcrudapi/src/main/java/com/abhishek/restcrudapi/RestcrudapiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../05-spring-boot-rest-security/restcrudapi/src/main/java/com/abhishek/restcrudapi/RestcrudapiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../05-spring-boot-rest-security/restcrudapi/src/main/java/com/abhishek/restcrudapi/security/DemoSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../05-spring-boot-rest-security/restcrudapi/src/main/java/com/abhishek/restcrudapi/security/DemoSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-spring-boot-spring-mvc-security/mvcsecurity/src/main/resources/templates/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/../08-spring-boot-spring-mvc-security/mvcsecurity/src/main/resources/templates/homepage.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2YnoB1bqDa8OF2Ks2fYnthTrDzg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Chad Derby Projects/Springboot Thymeleaf and MVC Crud  Project/mvccrud&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ba7f7680-4b45-4a9e-9e48-e42fc72228e0" name="Changes" comment="" />
+      <created>1701170564748</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701170564748</updated>
+    </task>
+    <servers />
+  </component>
+</project>

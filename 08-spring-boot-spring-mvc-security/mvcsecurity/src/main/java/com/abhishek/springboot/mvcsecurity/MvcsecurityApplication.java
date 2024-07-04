@@ -1,16 +1,13 @@
-package com.abhishek.restcrudapi;
+package com.abhishek.springboot.mvcsecurity;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-
-
 @SpringBootApplication
-public class RestcrudapiApplication {
+public class MvcsecurityApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(RestcrudapiApplication.class, args);
+		SpringApplication.run(MvcsecurityApplication.class, args);
 	}
-
 
 }
